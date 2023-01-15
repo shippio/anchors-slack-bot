@@ -1,5 +1,5 @@
 import { Manifest } from "deno-slack-sdk/mod.ts";
-import GreetingWorkflow from "./workflows/greeting_workflow.ts";
+import RecodingWorkflow from "./workflows/recording_workflow.ts";
 
 /**
  * The app manifest contains the app's configuration. This
@@ -7,11 +7,12 @@ import GreetingWorkflow from "./workflows/greeting_workflow.ts";
  * https://api.slack.com/future/manifest
  */
 export default Manifest({
-  name: "anchors-bot",
+  name: "tech-support-recorder",
   description:
-    "A sample that demonstrates using a function, workflow and trigger to send a greeting",
+    "A slack application to record tech support responses from Slack form to Notion.",
+  // TODO: Replace the icon.
   icon: "assets/default_new_app_icon.png",
-  workflows: [GreetingWorkflow],
+  workflows: [RecodingWorkflow],
   outgoingDomains: [],
   botScopes: ["commands", "chat:write", "chat:write.public"],
 });
