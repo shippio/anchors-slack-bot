@@ -31,11 +31,34 @@ const _inputForm = RecordingWorkflow.addStep(
     submit_label: "Send recording",
     fields: {
       elements: [{
+        name: "title",
+        title: "Title",
+        type: Schema.types.string,
+      }, {
         name: "responder",
         title: "Who responded?",
+        type: Schema.slack.types.user_id,
+      }, {
+        name: "incident",
+        title: "Summary of the incident",
+        type: Schema.types.string,
+        long: true,
+      }, {
+        name: "cause",
+        title: "Summary of the cause",
+        type: Schema.types.string,
+        long: true,
+      }, {
+        name: "response",
+        title: "Summary of your response",
+        type: Schema.types.string,
+        long: true,
+      }, {
+        name: "link",
+        title: "A link to the thread",
         type: Schema.types.string,
       }],
-      required: ["responder"],
+      required: ["title", "responder", "incident", "cause", "response", "link"],
     },
   },
 );
