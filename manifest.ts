@@ -13,6 +13,6 @@ export default Manifest({
   // TODO: Replace the icon.
   icon: "assets/default_new_app_icon.png",
   workflows: [RecodingWorkflow],
-  outgoingDomains: [],
+  outgoingDomains: ["api.notion.com"],
   botScopes: ["commands", "chat:write", "chat:write.public"],
 });

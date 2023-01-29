@@ -1,4 +1,5 @@
 import { DefineWorkflow, Schema } from "deno-slack-sdk/mod.ts";
+import { AddNotionPageFunctionDefinition } from "../functions/add_notion_page_function.ts";
 
 /**
  * A Workflow is a set of steps that are executed in order.
@@ -23,7 +24,7 @@ const RecordingWorkflow = DefineWorkflow({
  * Built-in OpenForm function as a first step for collecting input from users.
  * https://api.slack.com/future/functions#open-a-form
  */
-const _inputForm = RecordingWorkflow.addStep(
+const inputForm = RecordingWorkflow.addStep(
   Schema.slack.functions.OpenForm,
   {
     title: "Record your response",
@@ -37,7 +38,7 @@ const _inputForm = RecordingWorkflow.addStep(
       }, {
         name: "responder",
         title: "Who responded?",
-        type: Schema.slack.types.user_id,
+        type: Schema.types.string,
       }, {
         name: "incident",
         title: "Summary of the incident",
@@ -55,11 +56,23 @@ const _inputForm = RecordingWorkflow.addStep(
         long: true,
       }, {
         name: "link",
-        title: "A link to the thread",
+        title: "The link to the slack thread",
         type: Schema.types.string,
       }],
       required: ["title", "responder", "incident", "cause", "response", "link"],
     },
+  },
+);
+
+RecordingWorkflow.addStep(
+  AddNotionPageFunctionDefinition,
+  {
+    title: inputForm.outputs.fields.title,
+    responder: inputForm.outputs.fields.responder,
+    incident: inputForm.outputs.fields.incident,
+    cause: inputForm.outputs.fields.cause,
+    response: inputForm.outputs.fields.response,
+    link: inputForm.outputs.fields.link,
   },
 );
 
