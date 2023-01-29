@@ -5,16 +5,22 @@ send a greeting to channel.
 
 **Guide Outline**:
 
-- [Setup](#setup)
-  - [Install the Slack CLI](#install-the-slack-cli)
-  - [Clone the Template](#clone-the-template)
-- [Create a Link Trigger](#create-a-link-trigger)
-- [Running Your Project Locally](#running-your-project-locally)
-- [Testing](#testing)
-- [Deploying Your App](#deploying-your-app)
-  - [Viewing Activity Logs](#viewing-activity-logs)
-- [Project Structure](#project-structure)
-- [Resources](#resources)
+- [Deno Hello World Slack App](#deno-hello-world-slack-app)
+  - [Setup](#setup)
+    - [Install the Slack CLI](#install-the-slack-cli)
+    - [Clone the Sample](#clone-the-sample)
+  - [Create a Link Trigger](#create-a-link-trigger)
+  - [Running Your Project Locally](#running-your-project-locally)
+  - [Testing](#testing)
+  - [Deploying Your App](#deploying-your-app)
+    - [Viewing Activity Logs](#viewing-activity-logs)
+  - [Project Structure](#project-structure)
+    - [`manifest.ts`](#manifestts)
+    - [`slack.json`](#slackjson)
+    - [`/functions`](#functions)
+    - [`/workflows`](#workflows)
+    - [`/triggers`](#triggers)
+  - [Resources](#resources)
 
 ---
 

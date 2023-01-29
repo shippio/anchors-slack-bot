@@ -184,6 +184,13 @@
     "https://deno.land/x/deno_slack_sdk@1.4.3/types/types.ts": "0a98697da9daf6adc5750abb7c551b809702298167bfd09d4905daf3bddd7584",
     "https://deno.land/x/deno_slack_sdk@1.4.3/workflows/mod.ts": "2c44ad92311754a9a9003f3ad104470db045b0a461d5432562a5937e307b6cd1",
     "https://deno.land/x/deno_slack_sdk@1.4.3/workflows/types.ts": "47f36e9909f7c8e16527422e32b2f5fe307aa4f170e9bac14032de3560d412e9",
-    "https://deno.land/x/deno_slack_sdk@1.4.3/workflows/workflow-step.ts": "c25061231f3b9381f025e48665ba1680f5e52638b70736a7ce5842b19db0724e"
+    "https://deno.land/x/deno_slack_sdk@1.4.3/workflows/workflow-step.ts": "c25061231f3b9381f025e48665ba1680f5e52638b70736a7ce5842b19db0724e",
+    "https://deno.land/x/notion_sdk@v1.0.4/src/Client.ts": "5442ee1473616585085dc5a234284b2a6d9451412587900776b2f49eae224c6f",
+    "https://deno.land/x/notion_sdk@v1.0.4/src/api-endpoints.ts": "6e9fa88caa2006e16cb51cb0ec0dcff3742839cbcc0c9e26fe2555bc14db7b6f",
+    "https://deno.land/x/notion_sdk@v1.0.4/src/errors.ts": "4733c0aa3839a58d63c8a10a109ab85b747a7af79937e9a23ad98945ba3a5a05",
+    "https://deno.land/x/notion_sdk@v1.0.4/src/helpers.ts": "094fecaf44dcb52433b10329b9ddb70b14e06482c3acece93f5f581e7e8e0673",
+    "https://deno.land/x/notion_sdk@v1.0.4/src/logging.ts": "2bcb96592b63294bf4b7cc387449ad4a54538f424553c4285be5f7201cf2babe",
+    "https://deno.land/x/notion_sdk@v1.0.4/src/mod.ts": "f04f6c6eda22c333fa8eb6a042b180501295255b12348c4d69d5336b7ac913d6",
+    "https://deno.land/x/notion_sdk@v1.0.4/src/type-utils.ts": "b699d5b05c3c90579693ad53882877683b5ff5fc6e16633fbbf2aef8e30e176e"
   }
 }
